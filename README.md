@@ -11,3 +11,4 @@ to a Spring Boot Java project.
   - Manually added Spring Boot modules to the pom.xml. 
   - Removed all Visit and Vet class references from the project to show I understand Java class interrelationship.
   - Changed display images and text to show I understand Java project layout
+  - Used MockMVC test to demonstrate using data for tests without affecting database.
