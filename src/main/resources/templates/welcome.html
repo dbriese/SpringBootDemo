@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+  <body>
+
+    <h2 th:text="#{welcome}"></h2>
+    <div class="row">
+        <h3>Deirdre Briese Spring Boot Demo</h3>
+         <p>I have created this SpringBootDemo application based on the PetClinic app from Spring Boot.
+            My demo only has the Pet and Owner portions of the original PetClinic. I did this 
+            to demonstrate my ability to successfully make and debug significant modifications 
+            to a Java project.</p>
+            <ul> 
+              <li> Modified this app to use only the Owner and Pet classes of PetClinic. </li>     
+              <li> Moved the needed classes to my project correcting references as needed.</li> 
+              <li> Changed Spring Boot port to use 8082 to demonstrate knowledge of Spring Boot configuration settings</li> 
+              <li> Manually added Spring Boot modules to the pom.xml </li>
+              <li> Removed all Visit and Vet class references from the project to show I understand Java class interrelationship.</li>
+              <li> Changed display images and text to show I understand Java project layout</li>  
+			  <li> Modified tests to suit new project. Tests show solution of Mock strings to simulate database data</li>
+            </ul>               
+        
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="../static/resources/images/cute-pets.png" th:src="@{/resources/images/cute-pets.png}"/>
+        </div>
+    </div>
+
+  </body>
+
+</html>
